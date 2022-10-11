@@ -4,7 +4,7 @@ from torch.utils.cpp_extension import BuildExtension, CppExtension
 from torch.utils import cpp_extension
 
 setup(
-    name='activations-tool',
+    name='activations',  # Should match the macro of pybind
     ext_modules=[
         CppExtension('activations', ['src/main.cpp']),
     ],
